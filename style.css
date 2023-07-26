@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Stick&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+a,
+li {
+    text-decoration: none;
+    color: #000000;
+    list-style: none;
+}
+
+
+/* HEADER */
+
+#info-header {
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    padding: 0.5%;
+    font-size: 0.7em;
+
+}
+
+#info-header p {
+    position: absolute;
+}
+
+#close-info-header {
+    background-color: #313131;
+    color: antiquewhite;
+    padding: 0.2%;
+    margin-left: 90%;
+    border-radius: 3em;
+}
+
+#close-info-header:hover {
+    background-color: antiquewhite;
+    color: #1b1b1b;
+
+}
+
+#menu {
+    background-color: #f3db06;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#title {
+    font-size: 1.2em;
+    font-family: 'Stick', sans-serif;
+    margin-left: 1.2em;
+}
+
+.nav-header {
+    display: flex;
+    gap: 1.5em;
+    margin-right: 2em;
+}
+
+.nav-header li a {
+    font-size: 0.8em;
+}
+
+.nav-header li a:hover {
+    color: white;
+}
+
+/*PRESENTATION*/
+
+#presentation {
+    margin: 3%;
+    display: grid;
+    gap: 2%;
+    grid-template-areas: "text_beer text_beer text_beer beer_2 beer_2"
+                         "beer_1 beer_1 beer_1 beer_2 beer_2";
+}
+
+#text_beer_banner_1 {
+    margin-bottom: 4%;
+    grid-area: text_beer;
+}
+
+#text_beer_banner_1 h2 {
+    font-size: 2em;
+}
+
+#text_beer_banner_1 p {
+    text-align: justify;
+    font-size: 0.9em;
+    margin-top: 3%;
+    margin-right: 1.5%;
+}
+
+#beer_banner_1,
+#beer_banner_2 {
+    color:#eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+#beer_banner_1 {
+    background-image: url(./images/gerrie-van-der-walt-2uSnxq3M4GE-unsplash\ \(1\)\ mod.jpg);
+    height: 320px;
+    grid-area: beer_1;
+}
+
+
+#beer_banner_2 {
+    background-image: url(./images/fabio-alves-_fLgxjACz5k-unsplash\ \(1\)\ mod.jpg);
+    grid-area: beer_2;
+}
+
+.txt-banner {
+    text-align: justify;
+    font-size: 0.9em;
+    margin: 0% 3% 3% 2%;
+}
+
+
+#btn_banner {
+    padding: 2%;
+    border-radius: 50px;
+    margin: 0% 5% 5% 2% ;
+    background-color: #eeeeee ;
+}
+
+#btn_banner:hover{
+    color: #eeeeee;
+    background-color: #1b1b1b;
+}
+
+/* TEXT */
+#text_beer {
+    margin: 3%;
+    padding: 7% 0% 7% 0%;
+    font-size: 1.8em;
+    text-align: justify;
+}
+
+/* INFO CARDS */
+#info_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+#text_info_cards {
+    margin-left: 3%;
+    font-size: 1.5em;
+}
+
+#nav_cards{
+    margin-right: 3%;
+}
+
+
+#nav_cards ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+
+#nav_cards ul li a {
+    font-size: 0.9em;
+    background-color: white;
+    padding: 0.7em;
+    border-radius: 40px;
+}
+
+#nav_cards ul li a:hover{
+    color: white;
+    background-color: #1b1b1b;
+}
+
+
+/* CARDS */
+
+#cards {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10%;   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+
+}
+
+.text--medium {
+    font-size: 0.9em;
+    color: black;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px #00000075;
+    transition: all 0.3s ease 0s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.image {
+    width: 100%;
+    height: 210px;
+    padding-top: 70%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img {
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    margin: 20px;
+}
+
+.title {
+    margin-bottom: 8px;
+}
